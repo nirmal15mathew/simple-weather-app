@@ -8,6 +8,4 @@ workbox.routing.registerRoute(
 if (window.location?.search === "?home=true"){
     document.body.innerHtml = '<h1>Offline!</h1>
     }
-self.addEventListener('install', (e) => {
-    console.log('[Service Worker] Install');
-});
+
