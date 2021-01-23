@@ -5,3 +5,6 @@ workbox.routing.registerRoute(
     new workbox.strategies.CacheFirst()
     // new workbox.strategies.NetworkFirst()
 )
+if (window.location?.search === "?home=true"){
+    document.body.innerHtml = '<h1>Offline!</h1>
+    }
