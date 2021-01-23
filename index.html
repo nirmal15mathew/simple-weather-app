@@ -35,7 +35,9 @@
         navigator.serviceWorker.register("./service-worker.js");
         console.log("Service registered");
       }
-
+self.addEventListener('install', (e) => {
+    console.log('[Service Worker] Install');
+});
       // app code
       const form = document.querySelector(".top-banner form");
       const input = document.querySelector(".top-banner input");
